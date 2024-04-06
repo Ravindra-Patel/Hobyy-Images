@@ -1,7 +1,7 @@
 body {
     overflow: hidden;
     font-family: "Roboto", serif;
-    background: linear-gradient(135deg, black, #220033);
+    background: linear-gradient(135deg, white, #220033);
   }
   
   .carousel {
@@ -13,9 +13,9 @@ body {
   }
   
   .carousel-item {
-    --items: 10;
-    --width: clamp(150px, 30vw, 300px);
-    --height: clamp(200px, 40vw, 400px);
+    --items: 12; 
+    --width: clamp(150px, 70vw, 300px);
+    --height: clamp(200px, 90vw, 400px);
     --x: calc(var(--active) * 800%);
     --y: calc(var(--active) * 200%);
     --rot: calc(var(--active) * 120deg);
@@ -34,8 +34,8 @@ body {
         -ms-user-select: none;
             user-select: none;
     transform-origin: 0% 100%;
-    box-shadow: 0 10px 50px 10px rgba(0, 0, 0, 0.5);
-    background: black;
+    box-shadow: 0 10px 50px 10px rgba(0, 0, 0, 0.7);
+    background: white;
     pointer-events: all;
     transform: translate(var(--x), var(--y)) rotate(var(--rot));
     transition: transform 0.8s cubic-bezier(0, 0.02, 0, 1);
