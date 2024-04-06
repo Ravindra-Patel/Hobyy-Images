@@ -18,8 +18,8 @@ body {
     --width: clamp(150px, 70vw, 300px);
     --height: clamp(200px, 90vw, 400px);
     --x: calc(var(--active) * 800%);
-    /*--y: 0 to make it left to right */
-    --y: calc(var(--active) * 200%);  
+    --y: 0;
+    /* --y: calc(var(--active) * 200%);   */
     --rot: calc(var(--active) * 120deg);
     --opacity: calc(var(--zIndex) / var(--items) * 3 - 2);
     overflow: hidden;
